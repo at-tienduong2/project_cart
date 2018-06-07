@@ -1,0 +1,23 @@
+$container-width : 100%;
+
+%pd-l-r {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-md-2 {
+  width: $container-width / 6;
+  @extend %pd-l-r;
+}
+.col-md-3 {
+  width: $container-width / 4;
+  @extend %pd-l-r;
+}
+.col-md-4 {
+  width: $container-width / 3;
+  @extend %pd-l-r;
+}
+.col-md-6 {
+  width: $container-width / 2;
+  @extend %pd-l-r;
+}

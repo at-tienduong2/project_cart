@@ -1,0 +1,42 @@
+.header {
+  background-color: $color-a;
+  border-bottom: 1px solid;
+  position: relative;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    .menu-link {
+      color: $color-a;
+      .fa-shopping-cart {
+        color: $color-a;
+      }
+    }
+  }
+}
+.header-top {
+  .menu-link {
+    padding: 35px 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-c;
+    text-transform: uppercase;
+    font-weight: 600;
+    .fa-shopping-cart {
+      color: $color-primary;
+      margin-right: 5px;
+      font-size: 16px;
+    }
+    .number {
+      width: 17px;
+      height: 17px;
+      background-color: $color-primary;
+      color: $color-a;
+      text-align: center;
+      font-size: 12px;
+      border-radius: 100%;
+      line-height: 1.5;
+    }
+  }
+}
