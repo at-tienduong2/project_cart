@@ -1,6 +1,19 @@
 .header {
   background-color: $color-a;
   border-bottom: 1px solid;
+  position: relative;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    .menu-link {
+      color: $color-a;
+      .fa-shopping-cart {
+        color: $color-a;
+      }
+    }
+  }
 }
 .header-top {
   .menu-link {

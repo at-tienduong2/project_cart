@@ -5,32 +5,50 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.title {
+  @extend %title;
+}
 
-.section-products {
-  .title {
-    color: $color-primary;
-    font-size: 24px;
-    line-height: 24px;
+
+.product {
+  display: inline-block;
+  box-sizing: border-box;
+  .product-img {
+    width: 100%;
   }
-  .product {
-    display: inline-block;
-    box-sizing: border-box;
-    .product-img {
-      width: 100%;
-    }
-    .product-title {
-      text-transform: capitalize;
-      font-weight: 600;
-    }
-    .product-price {
-      color: $color-h;
-    }
-    .btn-cart {
-      padding: 5px 15px;
-      background-color: $color-primary;
-      color: $color-a;
-      text-align: center;
-      text-transform: uppercase;
-    }
+  .product-title {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
   }
+  .product-price {
+    color: $color-h;
+    font-size: 16px;
+  }
+  .btn-cart {
+    padding: 5px 15px;
+    background-color: $color-primary;
+    color: $color-a;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.my-cart {
+  border-collapse: collapse;
+  width: 100%;
+  td, th {
+    padding: 8px;
+    border: 1px solid $color-b;
+    text-align: center;
+  }
+  th {
+    font-size: 16px;
+    color: $color-a;
+    background-color: $color-primary;
+  }
+  .des {
+    text-align: left;
+  }
+
 }
