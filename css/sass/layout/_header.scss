@@ -1,12 +1,14 @@
 .header {
-  background-color: $color-a;
+  background-color: rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid;
   position: relative;
+  z-index: 99;
   &.sticky {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
     .menu-link {
       color: $color-a;
       .fa-shopping-cart {
@@ -20,9 +22,12 @@
     padding: 35px 15px;
     font-size: 14px;
     line-height: 20px;
-    color: $color-c;
+    color: $color-a;
     text-transform: uppercase;
     font-weight: 600;
+    &:hover {
+      color: $color-primary;
+    }
     .fa-shopping-cart {
       color: $color-primary;
       margin-right: 5px;

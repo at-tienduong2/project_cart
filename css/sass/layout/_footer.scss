@@ -1,8 +1,37 @@
 .footer {
   border-top: 1px solid;
-  height: 50px;
   background-color: rgba(0, 0, 0, 0.8);
   .copyright {
     color: $color-a;
   }
+  .social-item {
+    display: inline-block;
+    .social-link {
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      border-radius: 100%;
+      border: 1px solid #575757;
+      line-height: 2;
+      margin-right: 5px;
+    }
+  }
+  .icon-social:hover {
+    color: $color-primary;
+  }
+  .our-link {
+    display: inline-block;
+    .title {
+      font-size: 20px;
+      text-transform: capitalize;
+      color: $color-a;
+    }
+    .link {
+      padding: 10px 5px;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
 }
+
