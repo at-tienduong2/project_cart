@@ -1,0 +1,312 @@
+.combination-filter {
+  display: flex;
+  .filter-group {
+    display: flex;
+    box-sizing: border-box;
+    .filter-text {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 3;
+    }
+    .btn-group {
+      display: flex;
+      margin-left: 10px;
+      text-transform: capitalize;
+      border-radius: 5px;
+      border: 1px solid;
+      .btn-filter {
+        padding: 10px 20px;
+        border-right: 1px solid;
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+.grid {
+  .filter-item {
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.filter-blue {
+  .filter-item { background-color: #0000FF; }
+}
+.filter-green {
+  .filter-item  { background-color: #00FF00; }
+}
+.filter-red {
+  .filter-item { background-color: #FF0000; }
+}
+
+.filter-circle .filter-item { border-radius: 50%; }
+
+.filter-large .filter-item {
+  width: 140px;
+  height: 140px;
+}
+
+//toggle
+
+.toggle-content {
+  width: 50%;
+}
+.js-togglet {
+  .icon-angle{
+    font-size: 20px;
+    color: $color-primary;
+  }
+  &.title-toggle {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  &.toggle-btn {
+    .toggle-open {
+      display: none;
+    }
+  }
+  &.toggle-action {
+    .toggle-open {
+      display: inline-block;
+    }
+    .toggle-closed {
+      display: none;
+    }
+  }
+}
+
+
+.js-acctitle {
+  background-color: #EEE;
+  line-height: 44px;
+  padding: 0 0 0 36px;
+  margin-bottom: 5px;
+  border-top: 0;
+  display: block;
+  position: relative;
+  line-height: 24px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+}
+
+.js-acc_content {
+  position: relative;
+  padding: 0 0 15px 20px;
+}
+
+body:not(.device-touch) .button {
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+body:not(.device-touch) .button i {
+  transition: left 0.3s ease, right 0.3s ease;
+}
+
+.btn-teal {
+ 
+}
+.button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 40px;
+  background-color: $color-primary;
+  color: $color-a;
+  letter-spacing: 1px;
+}
+.btn-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -32px;
+  width: 32px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  text-align: center;
+  background-color: rgba(0,0,0,0.1);
+}
+
+body:not(.device-touch) .button.span {
+  -webkit-transition: left 0.3s ease, right 0.3s ease;
+  -o-transition: left 0.3s ease, right 0.3s ease;
+  transition: left 0.3s ease, right 0.3s ease;
+}
+.reveal-button {
+  span {
+    display: inline-block;
+    position: relative;
+    left: 0;
+  }
+}
+
+
+/////////////shops
+.dropdown {
+  position: relative;
+  display: inline-block;
+  .dropdown-list {
+    min-width: 175px;
+    position: absolute;
+    border: 1px solid;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: $color-a;
+    display: none;
+    .item {
+      cursor: pointer;
+      padding: 5px 10px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.open {
+  display: block !important;
+}
+
+.loader {
+  border-top: 5px solid $color-aa;
+  border-right: 5px solid #7781d0;
+  border-bottom: 5px solid #939acf;
+  border-left: 5px solid $color-a;
+  border-radius: 100%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.progress {
+  width: 50%;
+  height: 10px;
+  background-color: rgba(238, 3238, 238, 238);
+  position: relative;
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+  border-radius: 4px;
+  .percent-progress {
+    height: 10px;
+    width: 0;
+    border-radius: 4px;
+    background: #63A25C;
+    text-align: right;
+    line-height: 3;
+    .percent {
+      display:inline-block;
+    }
+  }
+}
+
+//////form
+.form-info {
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  .form-fieldset {
+    background-color: $color-a;
+    border: none;
+    border-radius: 3px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    margin: auto;
+    position: relative;
+    .main-title {
+      font-size: 20px;
+      margin-bottom: 5px;
+      color: $color-primary;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .sub-title {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    input, textarea {
+      width: 90%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+    .action-button {
+      width: 100px;
+      background-color: $color-primary;
+      color: $color-a;
+      border-radius: 2px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 5px;
+      margin-top: 10px;
+      font-size: 16px;
+      &:hover {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px $color-primary;
+      }
+    }
+    &:not(:first-of-type) {
+      display: none;
+    }
+  }
+  ///progress-bar
+  .progress-bar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    counter-reset: step;
+    display: flex;
+    justify-content: space-around;
+    .item {
+      position: relative;
+      width: 33.33%;
+      &:before {
+        content: counter(step);
+        counter-increment: step;
+        width: 24px;
+        line-height: 24px;
+        display: block;
+        font-size: 12px;
+        color: #333;
+        border: 1px solid $color-primary;
+        border-radius: 3px;
+        margin: 0 auto 10px;
+      }
+      &:after {
+        content: '';
+        width: 86%;
+        height: 2px;
+        background-color: #d0cfcf;
+        position: absolute;
+        z-index: -1;
+        top: 11px;
+        left: -43%;
+      }
+      &:first-child:after {
+        content: none;
+      } 
+    }
+  }
+  .active:before, .active:after  {
+    background-color: $color-primary !important;
+    color: $color-a !important;
+  }
+}
+

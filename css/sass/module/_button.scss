@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  vertical-align: middle;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  cursor: pointer;
+  text-transform: capitalize;
+  user-select: none;
+}
+
+.btn-dropdown {
+  background-color: $color-aa;
+  width: 175px;
+  height: 32px;
+  color: $color-a;
+}

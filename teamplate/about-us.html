@@ -17,7 +17,7 @@
       </a>
       <nav class="navigation d-flex">
         <ul class="main-menu d-flex">
-          <li class="menu-item"><a class="menu-link text-primary" href="#">Home</a></li>
+          <li class="menu-item"><a class="menu-link text-primary" href="index.html">Home</a></li>
           <li class="menu-item"><a class="menu-link" href="about-us.html">About us</a></li>
           <li class="menu-item"><a class="menu-link" href="shops.html">Shops</a></li>
           <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
@@ -40,21 +40,129 @@
 
     <section class="section-products pd-t--8 pd-b--8">
       <div class="container">
-        <div class="main">
-          <h2>Enable Disable Submit Button Using jQuery</h2>
-          <form action="#" method="get">
-            <label>Name :</label>
-            <input id="name" name="name" placeholder="Ex: Albert" type="text" value="">
-            <label>Email :</label>
-            <input id="email" name="email" placeholder="Ex: albert@gmail.com" type="text" value="">
-            <label>Message :</label>
-            <textarea id="message" placeholder="Ex: Hi! Wassup"></textarea>
-            <input id="submit" type="submit" value="Submit">
-          </form>
+        <div class="row mg-b--4">
+          <h2 class="title mg-b--4">Toggle</h2>
+
+          <div class="toggle mg-b--3">
+            <div class="js-togglet toggle-btn title-toggle mg-b--2">
+              <i id="js-icon" class="toggle-closed fa fa-angle-right icon-angle"></i>
+              <i id="js-icon" class="toggle-open fa fa-angle-down icon-angle"></i>
+              This is a Toggle Title</div>
+            <div class="toggle-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate
+                illum excepturi quam cum voluptates doloribus quae nisi tempore
+                necessitatibus dolores ducimus enim libero eaque explicabo suscipit
+                animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam,
+                nam unde quas beatae vero vitae nulla.</p>  
+            </div>
           </div>
-          <p><b>Note:</b> By default we have Disabled Submit Button,<br>
-          Please fill complete form with approprite values to enable it.</p>
+
+          <div class="toggle mg-b--3">
+            <div class="js-togglet toggle-btn title-toggle mg-b--2">
+              <i id="js-icon" class="toggle-closed fa fa-angle-right icon-angle"></i>
+              <i id="js-icon" class="toggle-open fa fa-angle-down icon-angle"></i>
+              This is a Toggle Title</div>  
+            <div class="toggle-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate
+                illum excepturi quam cum voluptates doloribus quae nisi tempore
+                necessitatibus dolores ducimus enim libero eaque explicabo suscipit
+                animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam,
+                nam unde quas beatae vero vitae nulla.</p>  
+            </div>
+          </div>
+          <div class="toggle mg-b--3">
+            <div class="js-togglet toggle-btn title-toggle mg-b--2">
+              <i id="js-icon" class="toggle-closed fa fa-angle-right icon-angle"></i>
+              <i id="js-icon" class="toggle-open fa fa-angle-down icon-angle"></i>
+              This is a Toggle Title</div>
+            <div class="toggle-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate
+                illum excepturi quam cum voluptates doloribus quae nisi tempore
+                necessitatibus dolores ducimus enim libero eaque explicabo suscipit
+                animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam,
+                nam unde quas beatae vero vitae nulla.</p>  
+            </div>
+          </div>
         </div>
+
+
+        <!-- toggle accordion -->
+
+        <h2 class="title">Toggle Accordion</h2>
+
+        <div class="js-accordion clearfix mg-t--4" data-state="open">
+            
+          <div class="js-acctitle">Our Mission</div>
+          <div class="js-acc_content clearfix">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</div>
+
+          <div class="js-acctitle">What we Do?</div>
+          <div class="js-acc_content clearfix">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</div>
+
+          <div class="js-acctitle">Our Company's Values</div>
+          <div class="js-acc_content clearfix">Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.</div>
+
+          <div class="js-acctitle">Our Company's Values</div>
+          <div class="js-acc_content clearfix">Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.</div>
+        </div>
+
+
+        <div class="reveal-button">
+          <h2 class="title">Icon revea buttons</h2>
+          <a href="#" class="button btn-teal"><i class="fa fa-female btn-icon"></i><span>female</span></a>
+        </div>
+
+        <h2 class="title mg-b--6 mg-t--6">Combination Filter</h2>
+        <div class="combination-filter row">
+
+          <div class="col-md-4 filter-group">
+            <strong class="filter-text">Colors:</strong>
+            <div class="btn-group">
+              <a href="#" data-filter="" class="btn btn-filter">any</a>
+              <a href="#" data-filter=".filter-red" class="btn btn-filter">red</a>
+              <a href="#" data-filter=".filter-blue" class="btn btn-filter">blue</a>
+              <a href="#" data-filter=".filter-green" class="btn btn-filter">green</a>
+            </div>
+          </div>
+          <div class="col-md-4 filter-group">
+            <strong class="filter-text">Size:</strong>
+            <div class="btn-group">
+              <a href="#" data-filter="" class="btn btn-filter">any</a>
+              <a href="#" data-filter=".filter-small" class="btn btn-filter">small</a>
+              <a href="#" data-filter=".filter-large" class="btn btn-filter">large</a>
+            </div>
+          </div>
+          <div class="col-md-4 filter-group">
+            <strong class="filter-text">Type:</strong>
+            <div class="btn-group">
+              <a href="#" data-filter="" class="btn btn-filter">any</a>
+              <a href="#" data-filter=".filter-circle" class="btn btn-filter">circle</a>
+              <a href="#" data-filter=".filter-square" class="btn btn-filter">square</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid">
+
+          <div class="filter-red filter-small filter-square"><div class="filter-item"></div></div>
+          <div class="filter-red filter-large filter-square"><div class="filter-item"></div></div>
+          <div class="filter-blue filter-small filter-square"><div class="filter-item"></div></div>
+          <div class="filter-blue filter-large filter-square"><div class="filter-item"></div></div>
+          <div class="filter-green filter-small filter-square"><div class="filter-item"></div></div>
+          <div class="filter-green filter-large filter-square"><div class="filter-item"></div></div>
+          <div class="filter-red filter-small filter-circle"><div class="filter-item"></div></div>
+          <div class="filter-red filter-large filter-circle"><div class="filter-item"></div></div>
+          <div class="filter-blue filter-small filter-circle"><div class="filter-item"></div></div>
+          <div class="filter-blue filter-large filter-circle"><div class="filter-item"></div></div>
+          <div class="filter-green filter-small filter-circle"><div class="filter-item"></div></div>
+          <div class="filter-green filter-large filter-circle"><div class="filter-item"></div></div>
+        </div>
+
       </div>
     </section>
   </main>
@@ -97,6 +205,8 @@
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
   <!-- <script type="text/javascript" src="../js/main.js"></script> -->
   <script type="text/javascript" src="../js/index.js"></script>
 </body>
